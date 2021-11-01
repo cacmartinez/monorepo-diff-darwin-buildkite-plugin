@@ -16,7 +16,7 @@ test_mode="${BUILDKITE_PLUGIN_MONOREPO_DIFF_BUILDKITE_PLUGIN_TEST_MODE:-false}"
 if [ -z ${version} ]; then
   url=${repo}/releases/latest/download/${executable}
 else
-  url=${repo}/releases/download/${version:1}/${executable}
+  url=${repo}/releases/download/2.1.1/${executable}
 fi
 
 if [[ "$test_mode" == "false" ]]; then
